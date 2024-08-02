@@ -3,6 +3,7 @@
   <WelcomeSection />
   <AboutSection />
   <SkillSection />
+  <ProjectSection/>
 </template>
 
 <script>

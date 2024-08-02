@@ -20,7 +20,7 @@
                   <v-spacer></v-spacer>
                   <v-btn
                     color="orange-lighten-2"
-                    :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+                    :icon="show ? '$collapse' : '$expand'"
                     @click="show = !show"
                   ></v-btn>
                 </v-card-actions>

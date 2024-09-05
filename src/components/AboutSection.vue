@@ -21,7 +21,7 @@
                   <v-btn
                     color="orange-lighten-2"
                     :icon="show ? '$collapse' : '$expand'"
-                    @click="show = !show"
+                    @click= "show =!show "
                   ></v-btn>
                 </v-card-actions>
               </v-card-title>
@@ -51,7 +51,15 @@ export default {
     };
   },
   computed: {
-    ...mapState(useAboutStore,['contents'])
+    ...mapState(useAboutStore,['contents']),
+
+  },
+  methods: {
+    buttonClicked() {
+   
+      
+    },
+    ...mapActions(useAboutStore, ['clickedFromStore']),
   }
 };
 </script>

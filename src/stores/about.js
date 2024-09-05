@@ -26,5 +26,13 @@ export const useAboutStore = defineStore("about", {
         id: 3,
       },
     ],
-  })
+  }),
+  actions: {
+    clickedFromStore(id) {
+      //console.log(id);
+      //console.log(this.contents[id-1].id);
+      console.log(id)
+      
+    },
+  },
 })

@@ -4,6 +4,7 @@
   <AboutSection />
   <SkillSection />
   <ProjectSection/>
+  <Footer/>
 </template>
 
 <script>

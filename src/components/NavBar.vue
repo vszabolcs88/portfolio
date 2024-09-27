@@ -3,8 +3,9 @@
     <v-toolbar-title class="text-uppercase bold font-weight-bold" >Vince</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn text to="/">Home</v-btn>
-    <v-btn text to="/about">About</v-btn>
+    <v-btn text to="/portfolio">Portfolio</v-btn>
     <v-btn text to="/contact">Contact</v-btn>
+    <v-btn text to="/login">Sign in</v-btn> 
     <div class="progress position-absolute bottom-0 left-0" v-bind:style="styles"></div>
   </v-app-bar>
 </template>

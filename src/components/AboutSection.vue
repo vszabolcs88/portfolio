@@ -8,7 +8,7 @@
         <v-row>
           <v-col
             v-for="content in contents"
-            :key="content.id"
+            :key="content.id" 
             cols="4"
             my-12
           >
@@ -20,17 +20,17 @@
                   <v-spacer></v-spacer>
                   <v-btn
                     color="orange-lighten-2"
-                    :icon="show ? '$collapse' : '$expand'"
-                    @click= "show =!show "
+                    :icon="content.isVisible ? '$collapse' : '$expand'"
+                    @click= "clickedFromStore(content.id) "
                   ></v-btn>
                 </v-card-actions>
               </v-card-title>
 
               <v-expand-transition>
-                <div v-show="show">
-                  <v-card-tex>
+                <div v-show="content.isVisible">
+                  <v-card-text>
                     {{ content.content }}
-                  </v-card-tex>
+                  </v-card-text>
                 </div>
               </v-expand-transition>
             </v-card>
@@ -55,8 +55,8 @@ export default {
 
   },
   methods: {
-    buttonClicked() {
-   
+    buttonClicked(id) {
+      console.log(id);
       
     },
     ...mapActions(useAboutStore, ['clickedFromStore']),

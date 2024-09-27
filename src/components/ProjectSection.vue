@@ -5,7 +5,7 @@
     </h2>
     <v-row align="center" justify="center" class="h-75 text-center">
       <v-col cols="12" md="8" class="fill-height">
-        <v-carousel show-arrows="hover" hide-delimiter-background > 
+        <v-carousel ref="carousel" show-arrows="hover" hide-delimiter-background > 
           <v-carousel-item
             v-for="(item, i) in items"
             :key="i"
@@ -43,6 +43,9 @@ export default {
     handleClick(index) {
       console.log(index);
     }
+  },
+  mounted() {
+    console.log(this.$refs.carousel);
   }
 }
 </script>
